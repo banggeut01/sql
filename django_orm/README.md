@@ -142,6 +142,8 @@
    # 여러 데이터
    User.objects.filter(age=30).values('first_name')
    type(User.objects.filter(age=30).values('first_name')[0]) # => dict
+   # 모든 필드 보이게
+   User.objects.filter(age=30).values()
    ```
 
       ```sql
